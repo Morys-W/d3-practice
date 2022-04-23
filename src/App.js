@@ -1,4 +1,3 @@
-import './App.css';
 import Charts from './Components/Charts';
 import SimpleGraph from './Components/SimpleGraph';
 import TeeGraph from './Components/TeeGraph';
