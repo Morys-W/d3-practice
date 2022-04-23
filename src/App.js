@@ -1,13 +1,15 @@
 import './App.css';
 import Charts from './Components/Charts';
-import Graphs from './Components/Graphs';
+import SimpleGraph from './Components/SimpleGraph';
+import TeeGraph from './Components/TeeGraph';
 
 
 function App() {
   return (
     <div className="App">
       <Charts />
-      <Graphs />
+      <SimpleGraph />
+      <TeeGraph />
     </div>
   );
 }
