@@ -1,12 +1,7 @@
 import Charts from './Components/Charts';
-<<<<<<< HEAD
-import Graphs from './Components/Graphs';
+import TeeGraph from './Components/TeeGraph';
 import * as d3 from "d3";
 import React, { useState, useRef, useEffect} from "react";
-=======
-import SimpleGraph from './Components/SimpleGraph';
-import TeeGraph from './Components/TeeGraph';
->>>>>>> bc4c56a766c60183532c9f4752a10e471f046843
 
 
 const App=()=> {
@@ -29,7 +24,6 @@ const App=()=> {
   );
 
   return (
-<<<<<<< HEAD
     <div>
         <span className="label">Multiple attackers</span>
         <Charts 
@@ -41,13 +35,6 @@ const App=()=> {
         />
       </div>
 
-=======
-    <div className="App">
-      <Charts />
-      <SimpleGraph />
-      <TeeGraph />
-    </div>
->>>>>>> bc4c56a766c60183532c9f4752a10e471f046843
   );
 }
 
