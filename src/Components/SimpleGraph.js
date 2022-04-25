@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
-import './App.css'
+
 
 const SimpleGraph = () => {
     const [data] = useState([200, 250, 60, 175, 100]);
