@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-const TeeGraph = () => {
+export const TeeGraph = () => {
 
     
     // BAR GRAPH WITH COUNTER

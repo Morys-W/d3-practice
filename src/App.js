@@ -1,7 +1,7 @@
 import Charts from './Components/Charts';
 import TeeGraph from './Components/TeeGraph';
 import * as d3 from "d3";
-import React, { useState, useRef, useEffect} from "react";
+import React, { useState, useEffect} from "react";
 
 
 const App=()=> {
@@ -12,9 +12,9 @@ const App=()=> {
     }));
 
   const [data, setData] = useState(generateData(0));
-  const changeData = () => {
-    setData(generateData());
-  };
+  // const changeData = () => {
+  //   setData(generateData());
+  // };
 
   useEffect(
     () => {
@@ -27,11 +27,15 @@ const App=()=> {
     <div>
         <span className="label">Multiple attackers</span>
         <Charts 
+          className="charts"
           data={data}
           width={200}
           height={200}
           innerRadius={0}
           outerRadius={100}
+        />
+        <TeeGraph 
+          className="graphs"
         />
       </div>
 
