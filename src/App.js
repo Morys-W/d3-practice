@@ -1,7 +1,11 @@
 import Charts from './Components/Charts';
+<<<<<<< HEAD
 import SimpleGraph from './Components/SimpleGraph';
 import TeeGraph from './Components/TeeGraph';
 
+=======
+import TeeGraph from './Components/TeeGraph';
+>>>>>>> 98e627debbb7965539c9120647399929a2a544e0
 import * as d3 from "d3";
 import React, { useState, useRef, useEffect} from "react";
 
