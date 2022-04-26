@@ -52,14 +52,9 @@ const App=()=> {
         
 
         />
-<<<<<<< HEAD
         <TeeGraph 
           className="graphs"
         />
-=======
-        <SimpleGraph />
-        <TeeGraph />
->>>>>>> 141e81445fa7b789d3b665cdc62988b01f00852e
       </div>
 
   );
