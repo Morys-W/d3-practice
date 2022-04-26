@@ -3,7 +3,7 @@ import SimpleGraph from './Components/SimpleGraph';
 import TeeGraph from './Components/TeeGraph';
 
 import * as d3 from "d3";
-import React, { useState, useRef, useEffect} from "react";
+import React, { useState, useEffect} from "react";
 
 
 const App=()=> {
@@ -21,8 +21,15 @@ const App=()=> {
       value: 200,
     }));
 
+<<<<<<< HEAD
   const [data, setData] = useState();
   
+=======
+  const [data, setData] = useState(generateData(0));
+  // const changeData = () => {
+  //   setData(generateData());
+  // };
+>>>>>>> 01a6fbdae68759465689e374b618e98ae2f37241
 
   useEffect(
     () => {
@@ -35,6 +42,7 @@ const App=()=> {
     <div>
         <span className="label">Multiple attackers</span>
         <Charts 
+          className="charts"
           data={data}
           width={200}
           height={200}
@@ -44,8 +52,14 @@ const App=()=> {
         
 
         />
+<<<<<<< HEAD
+        <TeeGraph 
+          className="graphs"
+        />
+=======
         <SimpleGraph />
         <TeeGraph />
+>>>>>>> 141e81445fa7b789d3b665cdc62988b01f00852e
       </div>
 
   );
