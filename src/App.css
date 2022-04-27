@@ -8,14 +8,29 @@ body {
     stroke-miterlimit: 10;
 } */
 
-
-.charts {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.charts-container, .simple-container, .tee-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.graphs {
-    margin-left: 50%;
+.row {
+    width: auto;
+    border: 1px solid blue;
+}
+
+.charts-item, .simple-item, .tee-item {
+    background-color: tomato;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
 }

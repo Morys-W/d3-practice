@@ -52,8 +52,12 @@ export const TeeGraph = () => {
     }, [data]);
 
     return (
-        <div>
-            <svg ref={svgRef}></svg>
+        <div className="tee-container">
+            <div className="row">
+                <div className="tee-item">
+                    <svg ref={svgRef}></svg>
+                </div>
+            </div>
         </div>
     );
 }

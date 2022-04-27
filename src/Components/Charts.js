@@ -47,13 +47,16 @@ import * as d3 from "d3";
   );
 
   return (
-    <svg width={props.width} height={props.height}>
-      <g
-        ref={ref}
-        transform={`translate(${props.outerRadius} ${props.outerRadius})`}
-      />
-    </svg>
+    <div className="charts-container">
+      <div className="row">
+        <p className="charts-item"><svg width={props.width} height={props.height}>
+          <g
+            ref={ref}
+            transform={`translate(${props.outerRadius} ${props.outerRadius})`}
+          />
+        </svg></p>
+      </div>
+    </div>
   );
 };
 export default Charts;
-
