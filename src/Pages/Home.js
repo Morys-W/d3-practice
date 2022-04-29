@@ -39,6 +39,7 @@ const Home = () => {
         />
         <TeeGraph 
         />
+        <BarChart />
       </div>
 
   );
