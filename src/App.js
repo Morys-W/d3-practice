@@ -1,11 +1,7 @@
 import Charts from './Components/Charts';
-import SimpleGraph from './Components/SimpleGraph';
-import TeeGraph from './Components/TeeGraph';
-
 import * as d3 from "d3";
 import React, { useState, useEffect} from "react";
 import Home from './Pages/Home.js'
-import BarChart from './Components/BarChart';
 
 // const App = () => {
 //   return (
@@ -48,18 +44,11 @@ const App = () => {
     <div>
         <span className="label">Multiple attackers</span>
         <Charts 
-          className="charts"
           data={data}
           width={200}
           height={200}
           innerRadius={0}
           outerRadius={100}
-
-        
-
-        />
-        <TeeGraph 
-          className="graphs"
         />
       </div>
 

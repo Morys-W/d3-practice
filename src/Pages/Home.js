@@ -1,6 +1,7 @@
 import Charts from '../Components/Charts';
 
 import TeeGraph from '../Components/TeeGraph';
+import BarChart from '../Components/BarChart'
 import Data from '../Components/Data';
 import { Element } from 'react-faux-dom';
 
