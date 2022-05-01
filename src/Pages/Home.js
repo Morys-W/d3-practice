@@ -1,6 +1,5 @@
 import Charts from '../Components/Charts';
 import AxesChart from '../Components/AxesChart';
-import { drawChart } from './Components/BarChart';
 import Data from '../Components/Data';
 import { Element } from 'react-faux-dom';
 
