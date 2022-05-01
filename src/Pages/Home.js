@@ -1,7 +1,6 @@
 import Charts from '../Components/Charts';
-
-import TeeGraph from '../Components/TeeGraph';
-import BarChart from '../Components/BarChart'
+import AxesChart from '../Components/AxesChart';
+import { drawChart } from './Components/BarChart';
 import Data from '../Components/Data';
 import { Element } from 'react-faux-dom';
 
@@ -17,9 +16,6 @@ const Home = () => {
     }));
 
   const [data, setData] = useState(generateData(0));
-  // const changeData = () => {
-  //   setData(generateData());
-  // };
 
   useEffect(
     () => {
@@ -38,9 +34,8 @@ const Home = () => {
           innerRadius={0}
           outerRadius={100}
         />
-        <TeeGraph 
+        <AxesChart 
         />
-        <BarChart />
       </div>
 
   );
@@ -48,7 +43,7 @@ const Home = () => {
 
 export default Home;
 
-{/* <SimpleGraph 
+{/* <PlaceholderGraph 
   width={600}
   height={350}
   data={{

@@ -1,7 +1,8 @@
 import Charts from './Components/Charts';
 import * as d3 from "d3";
 import React, { useState, useEffect} from "react";
-import Home from './Pages/Home.js'
+import Home from './Pages/Home';
+import { drawChart } from './Components/BarChart';
 
 // const App = () => {
 //   return (
@@ -43,6 +44,7 @@ const App = () => {
   return (
     <div>
         <span className="label">Multiple attackers</span>
+        <Home />
         <Charts 
           data={data}
           width={200}
@@ -50,6 +52,7 @@ const App = () => {
           innerRadius={0}
           outerRadius={100}
         />
+        <BarChart />
       </div>
 
   );

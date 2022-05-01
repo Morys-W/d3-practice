@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-export const TeeGraph = () => {
+export const AxesChart = () => {
 
     
     // BAR GRAPH WITH COUNTER
@@ -62,4 +62,4 @@ export const TeeGraph = () => {
     );
 }
 
-export default TeeGraph;
+export default AxesChart;
